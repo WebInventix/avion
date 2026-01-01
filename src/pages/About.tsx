@@ -1,7 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ShieldLogo } from "@/components/ShieldLogo";
-
+import { Link } from "react-router-dom";
 const AboutPage = () => {
   return (
     <div className="min-h-screen bg-background">
@@ -15,7 +15,8 @@ const AboutPage = () => {
                 About
               </span>
               <h1 className="font-serif text-4xl lg:text-5xl xl:text-6xl text-foreground mb-8 animate-fade-in-delay">
-                A Legacy of <span className="text-gradient-gold">Stewardship</span>
+                {/* A Legacy of <span className="text-gradient-gold">Stewardship</span> */}
+                Private Family Office
               </h1>
               <div className="w-24 h-px bg-gradient-to-r from-transparent via-primary to-transparent mx-auto animate-fade-in-delay-2" />
             </div>
@@ -29,19 +30,31 @@ const AboutPage = () => {
               <div className="text-center mb-12">
                 <ShieldLogo className="w-20 h-24 mx-auto glow-purple" />
               </div>
-              
+
               <div className="space-y-8 text-center">
                 <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed">
-                  Arvion was established as a private holding entity to manage, preserve, and govern 
-                  family capital across generations. We operate as a privately held governance and 
-                  holdings platform, serving as the structural foundation for multi-generational 
-                  wealth preservation and strategic capital deployment.
+                  Arvion is a single-family office established to manage,
+                  preserve, and govern the capital, holdings, and strategic
+                  interests of our principals.
                 </p>
-                
+
                 <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed">
-                  Our philosophy centers on institutional discipline, long-term orientation, and 
-                  absolute discretion. We do not pursue growth for its own sake—we pursue 
-                  continuity, stability, and the perpetuation of legacy.
+                  We are not an investment fund. We do not accept outside
+                  capital. We do not provide advisory services to third parties.
+                  Our sole obligation is to the family we serve.
+                </p>
+
+                <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed">
+                  The office provides centralized oversight of diverse holdings
+                  including operating companies, real assets, financial
+                  instruments, and philanthropic initiatives. Each entity
+                  operates independently while remaining aligned with the
+                  governance framework established by Arvion.
+                </p>
+
+                <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed">
+                  Our approach emphasizes preservation over speculation,
+                  stability over growth, and discretion above all.
                 </p>
               </div>
             </div>
@@ -53,31 +66,42 @@ const AboutPage = () => {
           <div className="container mx-auto px-6 lg:px-12">
             <div className="max-w-4xl mx-auto">
               <h2 className="font-serif text-3xl lg:text-4xl text-foreground text-center mb-16">
-                Our Values
+                Guiding Principles
               </h2>
-              
+
               <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
                 {[
                   {
-                    title: "Long-Term Orientation",
-                    description: "We measure success across decades, not quarters. Every decision is made with generational continuity in mind."
-                  },
-                  {
-                    title: "Institutional Discipline",
-                    description: "Rigorous frameworks and governance structures ensure consistency beyond any individual mandate."
-                  },
-                  {
-                    title: "Absolute Discretion",
-                    description: "Privacy is not a preference—it is a foundational principle that guides all our operations."
-                  },
-                  {
                     title: "Principal Alignment",
-                    description: "We cultivate enduring relationships with those who share our commitment to preservation and prudence."
-                  }
+                    description:
+                      "All decisions are made in the exclusive interest of the principals. No external shareholders. No conflicting mandates.",
+                  },
+                  {
+                    title: "Institutional Permanence",
+                    description:
+                      "Structures designed to endure. Governance frameworks built for decades, not quarters.",
+                  },
+                  {
+                    title: "Deliberate Action",
+                    description:
+                      "We move with intention. Speed is subordinate to diligence and thorough analysis.",
+                  },
+                  {
+                    title: "Absolute Confidentiality",
+                    description:
+                      "Complete discretion in all matters. No public disclosure of holdings, transactions, or principals.",
+                  },
                 ].map((value) => (
-                  <div key={value.title} className="p-8 border border-border/50 bg-card/30">
-                    <h3 className="font-serif text-xl text-foreground mb-4">{value.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed">{value.description}</p>
+                  <div
+                    key={value.title}
+                    className="p-8 border border-border/50 bg-card/30"
+                  >
+                    <h3 className="font-serif text-xl text-foreground mb-4">
+                      {value.title}
+                    </h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {value.description}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -86,13 +110,16 @@ const AboutPage = () => {
         </section>
 
         {/* Closing Statement */}
-        <section className="py-16 lg:py-24">
+        <section className="py-16 lg:py-10">
           <div className="container mx-auto px-6 lg:px-12">
             <div className="max-w-2xl mx-auto text-center">
-              <blockquote className="font-serif text-2xl lg:text-3xl italic text-foreground/80 mb-8">
-                "We do not seek clients. We cultivate enduring alignments."
-              </blockquote>
-              <div className="w-16 h-px bg-primary/50 mx-auto" />
+              <p className="text-sm">
+                Arvion Holdings is a private entity. Nothing on this website
+                constitutes an offer, solicitation, or recommendation. See{" "}
+                <Link to={"/legal"} className="underline">
+                  full disclosures.
+                </Link>
+              </p>
             </div>
           </div>
         </section>

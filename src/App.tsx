@@ -9,6 +9,8 @@ import Mandate from "./pages/Mandate";
 import Structure from "./pages/Structure";
 import Access from "./pages/Access";
 import NotFound from "./pages/NotFound";
+import Legal from "./pages/Legal";
+import Contact from "./pages/Contact";
 
 const queryClient = new QueryClient();
 
@@ -24,7 +26,8 @@ const App = () => (
           <Route path="/mandate" element={<Mandate />} />
           <Route path="/structure" element={<Structure />} />
           <Route path="/access" element={<Access />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/legal" element={<Legal />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

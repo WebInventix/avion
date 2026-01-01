@@ -5,7 +5,7 @@ export function Hero() {
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
       {/* Subtle background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-secondary/20" />
-      
+
       {/* Content */}
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
@@ -29,10 +29,30 @@ export function Hero() {
 
           {/* Description */}
           <p className="animate-fade-in-delay-3 text-muted-foreground text-base lg:text-lg max-w-2xl mx-auto leading-relaxed">
-            Arvion is a private holding entity established to manage, preserve, and govern 
-            family capital across generations. We do not solicit external investment or 
-            provide advisory services to the public.
+            Arvion is a private holding entity established to manage, preserve,
+            and govern family capital across generations. We do not solicit
+            external investment or provide advisory services to the public.
           </p>
+          <br />
+          <br />
+          <div className="flex justify-center items-center gap-5">
+            <a
+              href="mailto:info@arvion.us"
+              className="inline-flex items-center gap-3 px-8 py-4 border border-primary/40 hover:border-primary hover:bg-primary/5 transition-all duration-300 group"
+            >
+              {/* <Mail className="w-5 h-5 text-primary/70 group-hover:text-primary transition-colors" /> */}
+              <span className="text-foreground tracking-wider">LEARN MORE</span>
+            </a>
+            <a
+              href="mailto:info@arvion.us"
+              className="inline-flex items-center gap-3 px-8 py-4 border border-primary/40 hover:border-primary hover:bg-primary/5 transition-all duration-300 group"
+            >
+              {/* <Mail className="w-5 h-5 text-primary/70 group-hover:text-primary transition-colors" /> */}
+              <span className="text-foreground tracking-wider">
+                LEGAL DISCLOSURES
+              </span>
+            </a>
+          </div>
         </div>
       </div>
 

@@ -1,20 +1,23 @@
 import { Shield, Lock, Eye } from "lucide-react";
-
+import { Link } from "react-router-dom";
 const principles = [
   {
     icon: Shield,
     title: "Governance",
-    description: "Institutional oversight of holdings and strategic direction across all entities.",
+    description:
+      "Institutional oversight of holdings and strategic direction across all entities.",
   },
   {
     icon: Lock,
     title: "Preservation",
-    description: "Capital protection and risk management designed for multi-generational continuity.",
+    description:
+      "Capital protection and risk management designed for multi-generational continuity.",
   },
   {
     icon: Eye,
     title: "Discretion",
-    description: "Absolute confidentiality in all matters. No public disclosure of holdings or principals.",
+    description:
+      "Absolute confidentiality in all matters. No public disclosure of holdings or principals.",
   },
 ];
 
@@ -53,6 +56,25 @@ export function Principles() {
             </div>
           ))}
         </div>
+
+        {/* <div className="border-b border-border/30 last:border-b-0"></div> */}
+
+        {/* Closing Statement */}
+        <section className="mt-5 py-5 lg:py-5">
+          <div className="container mx-auto px-6 lg:px-12">
+            <div className="mx-auto text-center">
+              <p className="text-sm">
+                This website is for informational purposes only and does not
+                constitute an offer to sell or solicitation of an offer to buy
+                any <br /> securities. Arvion is a private entity and does not
+                provide investment advisory services to the general public See{" "}
+                <Link to={"/legal"} className="underline">
+                  full legal <br /> disclosures.
+                </Link>
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
     </section>
   );

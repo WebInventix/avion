@@ -7,6 +7,8 @@ const navItems = [
   { label: "Mandate", href: "/mandate" },
   { label: "Structure", href: "/structure" },
   { label: "Access", href: "/access" },
+  { label: "Contact", href: "/contact" },
+  { label: "Legal", href: "/legal" },
 ];
 
 export function Header() {
@@ -20,8 +22,8 @@ export function Header() {
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link 
-            to="/" 
+          <Link
+            to="/"
             className="font-serif text-xl lg:text-2xl tracking-[0.3em] text-foreground font-medium hover:text-primary transition-colors"
           >
             ARVION
@@ -34,8 +36,8 @@ export function Header() {
                 key={item.label}
                 to={item.href}
                 className={`text-sm tracking-[0.15em] uppercase transition-colors duration-300 ${
-                  isActive(item.href) 
-                    ? "text-foreground" 
+                  isActive(item.href)
+                    ? "text-foreground"
                     : "text-muted-foreground hover:text-foreground"
                 }`}
               >
@@ -64,8 +66,8 @@ export function Header() {
                   to={item.href}
                   onClick={() => setIsMenuOpen(false)}
                   className={`text-sm tracking-[0.15em] uppercase transition-colors duration-300 ${
-                    isActive(item.href) 
-                      ? "text-foreground" 
+                    isActive(item.href)
+                      ? "text-foreground"
                       : "text-muted-foreground hover:text-foreground"
                   }`}
                 >
