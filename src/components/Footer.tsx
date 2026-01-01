@@ -84,9 +84,6 @@ export function Footer() {
             <p className="text-xs text-muted-foreground">
               © 2026 Arvion Holdings. All rights reserved.
             </p>
-            <p className="text-xs text-muted-foreground">
-              Private entity. No public solicitation.
-            </p>
           </div>
         </div>
       </div>
