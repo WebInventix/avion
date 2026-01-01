@@ -16,22 +16,23 @@ export function Hero() {
 
           {/* Title */}
           <h1 className="animate-fade-in-delay font-serif text-5xl lg:text-7xl xl:text-8xl tracking-[0.2em] text-foreground font-normal mb-6">
-            ARVION
+            Arvion
           </h1>
 
           {/* Tagline */}
-          <p className="animate-fade-in-delay-2 text-sm lg:text-base tracking-[0.2em] text-muted-foreground uppercase mb-8">
-            Private Wealth Stewardship
+          <p className="animate-fade-in-delay-2 font-serif text-lg lg:text-xl xl:text-2xl italic text-gradient-gold mb-8">
+            Private Family Office & Strategic Holdings
           </p>
 
           {/* Decorative line */}
-          <div className="animate-fade-in-delay-2 w-24 h-px bg-gradient-to-r from-transparent via-primary to-transparent mx-auto mb-12" />
+          <div className="animate-fade-in-delay-2 w-24 h-px bg-gradient-to-r from-transparent via-primary to-transparent mx-auto mb-10" />
 
-          {/* Quote */}
-          <blockquote className="animate-fade-in-delay-3 font-serif text-lg lg:text-xl italic text-foreground/70 max-w-lg mx-auto">
-            "Continuity through stewardship.<br />
-            Alignment across generations."
-          </blockquote>
+          {/* Description */}
+          <p className="animate-fade-in-delay-3 text-muted-foreground text-base lg:text-lg max-w-2xl mx-auto leading-relaxed">
+            Arvion is a private holding entity established to manage, preserve, and govern 
+            family capital across generations. We do not solicit external investment or 
+            provide advisory services to the public.
+          </p>
         </div>
       </div>
 

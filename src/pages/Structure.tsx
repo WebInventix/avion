@@ -1,6 +1,24 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { ShieldLogo } from "@/components/ShieldLogo";
+import { Shield, Lock, Eye } from "lucide-react";
+
+const structurePrinciples = [
+  {
+    icon: Shield,
+    title: "Governance",
+    description: "Institutional oversight of holdings and strategic direction across all entities."
+  },
+  {
+    icon: Lock,
+    title: "Preservation",
+    description: "Capital protection and risk management designed for multi-generational continuity."
+  },
+  {
+    icon: Eye,
+    title: "Discretion",
+    description: "Absolute confidentiality in all matters. No public disclosure of holdings or principals."
+  }
+];
 
 const StructurePage = () => {
   return (
@@ -8,89 +26,75 @@ const StructurePage = () => {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="pt-32 pb-16 lg:pt-40 lg:pb-24">
+        <section className="pt-32 pb-16 lg:pt-40 lg:pb-20">
           <div className="container mx-auto px-6 lg:px-12">
-            <div className="max-w-5xl">
-              <h1 className="font-serif text-4xl lg:text-5xl xl:text-6xl text-foreground mb-8">
+            <div className="max-w-4xl mx-auto text-center">
+              <span className="text-sm tracking-[0.2em] text-primary uppercase mb-6 block animate-fade-in">
                 Structure
+              </span>
+              <h1 className="font-serif text-4xl lg:text-5xl xl:text-6xl text-foreground mb-8 animate-fade-in-delay">
+                Institutional <span className="text-gradient-gold">Framework</span>
               </h1>
-              <p className="text-lg lg:text-xl text-muted-foreground max-w-3xl leading-relaxed">
-                Arvion operates across interconnected entities and strategies, unified by 
-                common governance and shared principles.
-              </p>
+              <div className="w-24 h-px bg-gradient-to-r from-transparent via-primary to-transparent mx-auto animate-fade-in-delay-2" />
             </div>
           </div>
         </section>
 
-        {/* Holding Platform Section */}
-        <section className="py-16 lg:py-24 border-t border-border/30">
+        {/* Overview Section */}
+        <section className="py-16 lg:py-24">
           <div className="container mx-auto px-6 lg:px-12">
-            <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
-              {/* Left Column */}
-              <div>
-                <h2 className="font-serif text-3xl lg:text-4xl text-foreground mb-8">
-                  A Holding & Governance Platform
-                </h2>
-                <div className="space-y-6 text-muted-foreground leading-relaxed">
-                  <p>
-                    Arvion functions as the governance layer across a constellation of 
-                    entities, vehicles, and strategic positions. We do not operate as a 
-                    single fund or investment manager, but as an institutional framework 
-                    that provides coherent oversight, risk management, and strategic 
-                    direction across diverse holdings.
-                  </p>
-                  <p>
-                    This structure allows for operational independence at the entity level 
-                    while maintaining unified governance, compliance standards, and alignment 
-                    with principal objectives.
-                  </p>
-                </div>
-              </div>
-
-              {/* Right Column - Shield */}
-              <div className="flex items-center justify-center lg:justify-end">
-                <div className="p-12 border border-border/30 bg-card/20">
-                  <ShieldLogo className="w-24 h-28 lg:w-32 lg:h-36 glow-purple" />
-                </div>
+            <div className="max-w-3xl mx-auto text-center">
+              <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
+                <p>
+                  Arvion operates as a privately held governance and holdings platform. Our 
+                  organizational structure is designed to ensure institutional discipline, 
+                  operational continuity, and absolute discretion across all activities.
+                </p>
+                <p>
+                  The structure prioritizes governance excellence and long-term stability 
+                  over complexity, enabling efficient decision-making while maintaining 
+                  rigorous oversight standards.
+                </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Structural Elements */}
+        {/* Central Entity */}
+        <section className="py-12">
+          <div className="container mx-auto px-6 lg:px-12">
+            <div className="max-w-4xl mx-auto text-center">
+              <div className="inline-block p-8 border-2 border-primary/50 bg-card/50">
+                <span className="font-serif text-2xl text-foreground tracking-wider">ARVION</span>
+                <p className="text-sm text-muted-foreground mt-2">Principal Governance Entity</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Principles Section */}
         <section className="py-16 lg:py-24 bg-secondary/30">
           <div className="container mx-auto px-6 lg:px-12">
-            <h2 className="font-serif text-2xl text-muted-foreground/50 mb-12">
-              Structural Elements
-            </h2>
-            
-            <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
-              {[
-                {
-                  label: "Holdings",
-                  title: "Strategic Positions",
-                  description: "Direct ownership in operating companies, real assets, and strategic ventures selected for long-term value creation and alignment with principal objectives."
-                },
-                {
-                  label: "Vehicles",
-                  title: "Investment Structures",
-                  description: "Purpose-built entities for specific mandates—whether geographic, sectoral, or structural—each governed under the unified Arvion framework."
-                },
-                {
-                  label: "Governance",
-                  title: "Oversight Bodies",
-                  description: "Committees and councils that provide strategic direction, risk oversight, and ensure alignment across all Arvion-governed entities."
-                }
-              ].map((element) => (
-                <div key={element.label} className="space-y-4">
-                  <span className="text-xs text-muted-foreground/50 uppercase tracking-wider">
-                    {element.label}
-                  </span>
-                  <h3 className="font-serif text-xl lg:text-2xl text-foreground">
-                    {element.title}
+            <div className="text-center mb-16">
+              <span className="text-sm tracking-[0.2em] text-primary uppercase block">
+                Foundational Principles
+              </span>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8 lg:gap-12 max-w-5xl mx-auto">
+              {structurePrinciples.map((principle) => (
+                <div
+                  key={principle.title}
+                  className="group text-center p-8 lg:p-10 bg-card/50 border border-border/50 hover:border-primary/30 transition-all duration-500"
+                >
+                  <div className="mb-6 inline-flex items-center justify-center w-14 h-14 border border-primary/30 group-hover:border-primary/50 transition-colors duration-500">
+                    <principle.icon className="w-6 h-6 text-primary/70 group-hover:text-primary transition-colors duration-500" />
+                  </div>
+                  <h3 className="font-serif text-xl lg:text-2xl text-foreground mb-4">
+                    {principle.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {element.description}
+                  <p className="text-muted-foreground text-sm lg:text-base leading-relaxed">
+                    {principle.description}
                   </p>
                 </div>
               ))}
@@ -98,25 +102,14 @@ const StructurePage = () => {
           </div>
         </section>
 
-        {/* Operational Approach */}
+        {/* Governance Note */}
         <section className="py-16 lg:py-24">
           <div className="container mx-auto px-6 lg:px-12">
-            <div className="max-w-3xl">
-              <h2 className="font-serif text-3xl lg:text-4xl text-foreground mb-8">
-                Operational Approach
-              </h2>
-              <div className="space-y-6 text-muted-foreground leading-relaxed">
-                <p>
-                  We do not publish detailed organizational structures, entity relationships, 
-                  or operational specifics. This discretion is intentional and reflects our 
-                  commitment to privacy for both Arvion and the principals we serve.
-                </p>
-                <p>
-                  Parties engaged with Arvion receive appropriate disclosures within the 
-                  context of specific relationships and transactions. Public visibility 
-                  serves no purpose in our operating model.
-                </p>
-              </div>
+            <div className="max-w-2xl mx-auto text-center">
+              <p className="text-muted-foreground italic">
+                Detailed structural information is provided only to qualified parties 
+                following formal introduction and appropriate due diligence.
+              </p>
             </div>
           </div>
         </section>

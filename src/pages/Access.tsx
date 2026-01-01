@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { Mail } from "lucide-react";
 
 const AccessPage = () => {
   return (
@@ -7,99 +8,66 @@ const AccessPage = () => {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="pt-32 pb-16 lg:pt-40 lg:pb-24">
+        <section className="pt-32 pb-16 lg:pt-40 lg:pb-20">
           <div className="container mx-auto px-6 lg:px-12">
-            <div className="max-w-5xl">
-              <h1 className="font-serif text-4xl lg:text-5xl xl:text-6xl text-foreground mb-8">
+            <div className="max-w-4xl mx-auto text-center">
+              <span className="text-sm tracking-[0.2em] text-primary uppercase mb-6 block animate-fade-in">
                 Access
+              </span>
+              <h1 className="font-serif text-4xl lg:text-5xl xl:text-6xl text-foreground mb-8 animate-fade-in-delay">
+                By <span className="text-gradient-gold">Introduction</span> Only
               </h1>
-              <p className="text-lg lg:text-xl text-muted-foreground max-w-3xl leading-relaxed">
-                Arvion operates on a private, invitation-only basis. We do not maintain 
-                public intake processes or respond to unsolicited inquiries.
-              </p>
+              <div className="w-24 h-px bg-gradient-to-r from-transparent via-primary to-transparent mx-auto animate-fade-in-delay-2" />
             </div>
           </div>
         </section>
 
-        {/* Access Philosophy */}
-        <section className="py-16 lg:py-24 border-t border-border/30">
-          <div className="container mx-auto px-6 lg:px-12">
-            <div className="max-w-3xl">
-              <div className="space-y-6 text-muted-foreground leading-relaxed">
-                <p>
-                  Arvion's relationships are formed through direct introduction and mutual 
-                  alignment—not through application or outreach. This approach is not 
-                  exclusionary for its own sake; it reflects the nature of the commitments 
-                  we undertake and the discretion required to fulfill them.
-                </p>
-                <p>
-                  We do not accept new principals through public channels. Those who are 
-                  invited to engage with Arvion arrive through established networks of 
-                  trust and shared values. This ensures that every relationship begins 
-                  with the foundation of mutual understanding that our work requires.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Existing Relationships */}
-        <section className="py-16 lg:py-24 bg-secondary/30">
-          <div className="container mx-auto px-6 lg:px-12">
-            <div className="max-w-3xl">
-              <h2 className="font-serif text-2xl lg:text-3xl text-foreground mb-6">
-                Existing Relationships
-              </h2>
-              <div className="space-y-6 text-muted-foreground leading-relaxed mb-10">
-                <p>
-                  Principals and partners with established relationships may contact their 
-                  designated representatives through existing secure channels.
-                </p>
-                <p>
-                  If you believe you should have access to Arvion's private communication 
-                  infrastructure but have not received credentials, please coordinate 
-                  through your introducing party.
-                </p>
-              </div>
-              
-              <p className="text-foreground/80 italic">
-                Inquiries by introduction only.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Strategic Partners */}
+        {/* Access Info Section */}
         <section className="py-16 lg:py-24">
           <div className="container mx-auto px-6 lg:px-12">
-            <div className="max-w-3xl">
-              <h2 className="font-serif text-2xl lg:text-3xl text-foreground mb-6">
-                Strategic Partners & Advisors
-              </h2>
-              <div className="space-y-6 text-muted-foreground leading-relaxed">
+            <div className="max-w-3xl mx-auto text-center">
+              <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
                 <p>
-                  For professionals, institutions, or advisors who believe there may be 
-                  strategic alignment with Arvion's mandate, we recommend engagement 
-                  through shared professional networks.
+                  Arvion operates on a private, invitation-only basis. We do not maintain 
+                  public intake processes or accept unsolicited inquiries.
                 </p>
-                <p>
-                  Arvion does not respond to cold outreach, but we maintain awareness 
-                  of the broader professional landscape through trusted intermediaries 
-                  and established institutional relationships.
+                <p className="text-foreground/70 italic">
+                  All engagements are by direct introduction only. We do not accept unsolicited inquiries 
+                  or investment proposals.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Disclaimer */}
-        <section className="py-12 border-t border-border/30">
+        {/* Contact Section */}
+        <section className="py-16 lg:py-24 bg-secondary/30">
           <div className="container mx-auto px-6 lg:px-12">
-            <div className="max-w-3xl">
-              <p className="text-sm text-muted-foreground/50">
-                This is a private entity. Arvion Holdings does not solicit public investment, 
-                accept unsolicited business proposals, or provide financial advisory services 
-                to the general public.
+            <div className="max-w-2xl mx-auto text-center">
+              <span className="text-sm tracking-[0.2em] text-primary uppercase mb-6 block">
+                Inquiries
+              </span>
+              
+              <h2 className="font-serif text-2xl lg:text-3xl text-foreground mb-6">
+                Inquiries by introduction only.
+              </h2>
+
+              <p className="text-muted-foreground mb-10">
+                For parties with a formal introduction, please direct correspondence to:
+              </p>
+
+              {/* Email Contact */}
+              <a
+                href="mailto:info@arvion.us"
+                className="inline-flex items-center gap-3 px-8 py-4 border border-primary/40 hover:border-primary hover:bg-primary/5 transition-all duration-300 group"
+              >
+                <Mail className="w-5 h-5 text-primary/70 group-hover:text-primary transition-colors" />
+                <span className="text-foreground tracking-wider">info@arvion.us</span>
+              </a>
+
+              {/* Note */}
+              <p className="text-sm text-muted-foreground/60 mt-10 italic">
+                We do not respond to unsolicited inquiries or investment proposals.
               </p>
             </div>
           </div>

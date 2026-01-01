@@ -8,122 +8,91 @@ const AboutPage = () => {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="pt-32 pb-16 lg:pt-40 lg:pb-24">
+        <section className="pt-32 pb-16 lg:pt-40 lg:pb-20">
           <div className="container mx-auto px-6 lg:px-12">
-            <div className="max-w-5xl">
-              <h1 className="font-serif text-4xl lg:text-5xl xl:text-6xl text-foreground mb-8">
-                About Arvion
+            <div className="max-w-4xl mx-auto text-center">
+              <span className="text-sm tracking-[0.2em] text-primary uppercase mb-6 block animate-fade-in">
+                About
+              </span>
+              <h1 className="font-serif text-4xl lg:text-5xl xl:text-6xl text-foreground mb-8 animate-fade-in-delay">
+                A Legacy of <span className="text-gradient-gold">Stewardship</span>
               </h1>
-              <p className="text-lg lg:text-xl text-muted-foreground max-w-3xl leading-relaxed">
-                A private institution founded on the principles of enduring stewardship, 
-                deliberate governance, and intergenerational continuity.
-              </p>
+              <div className="w-24 h-px bg-gradient-to-r from-transparent via-primary to-transparent mx-auto animate-fade-in-delay-2" />
             </div>
           </div>
         </section>
 
         {/* Philosophy Section */}
-        <section className="py-16 lg:py-24 border-t border-border/30">
+        <section className="py-16 lg:py-24">
           <div className="container mx-auto px-6 lg:px-12">
-            <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
-              {/* Left Column - Philosophy */}
-              <div>
-                <h2 className="font-serif text-3xl lg:text-4xl text-foreground mb-8">
-                  Philosophy
-                </h2>
-                <div className="space-y-6 text-muted-foreground leading-relaxed">
-                  <p>
-                    Arvion was established with a singular conviction: that true wealth 
-                    stewardship requires institutional permanence, not transactional 
-                    relationships. We exist not to grow assets quarter by quarter, but 
-                    to preserve and cultivate capital across the arc of generations.
-                  </p>
-                  <p>
-                    Our approach is rooted in patience. We do not chase returns or respond 
-                    to market noise. Instead, we maintain disciplined allocation frameworks 
-                    designed to weather uncertainty and compound value through time—measured 
-                    not in fiscal years, but in decades.
-                  </p>
-                  <p>
-                    This orientation attracts principals who share our commitment to legacy 
-                    over liquidity, and governance over growth for its own sake.
-                  </p>
-                </div>
+            <div className="max-w-3xl mx-auto">
+              <div className="text-center mb-12">
+                <ShieldLogo className="w-20 h-24 mx-auto glow-purple" />
               </div>
-
-              {/* Right Column - Quote */}
-              <div className="lg:pt-16">
-                <div className="mb-8">
-                  <ShieldLogo className="w-20 h-24 glow-purple" />
-                </div>
-                <blockquote className="border-l-2 border-primary/50 pl-6">
-                  <p className="font-serif text-xl lg:text-2xl italic text-foreground/80">
-                    "We do not measure success in annual returns, but in generational continuity."
-                  </p>
-                </blockquote>
+              
+              <div className="space-y-8 text-center">
+                <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed">
+                  Arvion was established as a private holding entity to manage, preserve, and govern 
+                  family capital across generations. We operate as a privately held governance and 
+                  holdings platform, serving as the structural foundation for multi-generational 
+                  wealth preservation and strategic capital deployment.
+                </p>
+                
+                <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed">
+                  Our philosophy centers on institutional discipline, long-term orientation, and 
+                  absolute discretion. We do not pursue growth for its own sake—we pursue 
+                  continuity, stability, and the perpetuation of legacy.
+                </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Guiding Principles Section */}
-        <section className="py-16 lg:py-24 border-t border-border/30">
+        {/* Values Section */}
+        <section className="py-16 lg:py-24 bg-secondary/30">
           <div className="container mx-auto px-6 lg:px-12">
-            <h2 className="font-serif text-3xl lg:text-4xl text-foreground mb-12">
-              Guiding Principles
-            </h2>
-            
-            <div className="grid md:grid-cols-2 gap-12 lg:gap-16">
-              {[
-                {
-                  title: "Principal Alignment",
-                  description: "Our interests are structurally bound to those of the families and principals we serve. There are no external shareholders or competing incentives."
-                },
-                {
-                  title: "Institutional Permanence",
-                  description: "We are structured to outlast any individual tenure. Governance frameworks ensure continuity regardless of personnel transitions."
-                },
-                {
-                  title: "Deliberate Pace",
-                  description: "We move with intention, not urgency. Decisions are made with consideration for long-term consequence, not short-term convenience."
-                },
-                {
-                  title: "Absolute Discretion",
-                  description: "Privacy is not a feature—it is foundational. We do not publicize relationships, strategies, or outcomes."
-                }
-              ].map((principle) => (
-                <div key={principle.title} className="flex gap-4">
-                  <span className="text-primary/50 text-xl">●</span>
-                  <div>
-                    <h3 className="font-serif text-xl text-foreground mb-3">{principle.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed">{principle.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Governance Structure */}
-        <section className="py-16 lg:py-24 border-t border-border/30">
-          <div className="container mx-auto px-6 lg:px-12">
-            <div className="max-w-3xl">
-              <h2 className="font-serif text-3xl lg:text-4xl text-foreground mb-8">
-                Governance Structure
+            <div className="max-w-4xl mx-auto">
+              <h2 className="font-serif text-3xl lg:text-4xl text-foreground text-center mb-16">
+                Our Values
               </h2>
-              <div className="space-y-6 text-muted-foreground leading-relaxed">
-                <p>
-                  Arvion operates with a governance model designed for permanence. Our structure 
-                  separates strategic oversight from operational execution, ensuring that 
-                  long-term orientation is never compromised by short-term pressures.
-                </p>
-                <p>
-                  Key decisions require deliberation across multiple governance bodies, 
-                  each with distinct mandates and accountability structures. This layered 
-                  approach provides resilience and continuity while maintaining the capacity 
-                  for decisive action when circumstances demand.
-                </p>
+              
+              <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+                {[
+                  {
+                    title: "Long-Term Orientation",
+                    description: "We measure success across decades, not quarters. Every decision is made with generational continuity in mind."
+                  },
+                  {
+                    title: "Institutional Discipline",
+                    description: "Rigorous frameworks and governance structures ensure consistency beyond any individual mandate."
+                  },
+                  {
+                    title: "Absolute Discretion",
+                    description: "Privacy is not a preference—it is a foundational principle that guides all our operations."
+                  },
+                  {
+                    title: "Principal Alignment",
+                    description: "We cultivate enduring relationships with those who share our commitment to preservation and prudence."
+                  }
+                ].map((value) => (
+                  <div key={value.title} className="p-8 border border-border/50 bg-card/30">
+                    <h3 className="font-serif text-xl text-foreground mb-4">{value.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{value.description}</p>
+                  </div>
+                ))}
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Closing Statement */}
+        <section className="py-16 lg:py-24">
+          <div className="container mx-auto px-6 lg:px-12">
+            <div className="max-w-2xl mx-auto text-center">
+              <blockquote className="font-serif text-2xl lg:text-3xl italic text-foreground/80 mb-8">
+                "We do not seek clients. We cultivate enduring alignments."
+              </blockquote>
+              <div className="w-16 h-px bg-primary/50 mx-auto" />
             </div>
           </div>
         </section>
