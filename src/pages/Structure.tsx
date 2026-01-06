@@ -19,7 +19,6 @@ const structurePrinciples = [
   },
 ];
 
-
 const StructurePage = () => {
   return (
     <div className="min-h-screen bg-background">
@@ -96,11 +95,17 @@ const StructurePage = () => {
                   {/* Logo (only renders if exists) */}
                   {principle.logo && (
                     <div className="mb-6 flex justify-center">
-                      <img
-                        src={principle.logo}
-                        alt={principle.title}
-                        className="h-10 lg:h-12 object-contain brightness-0 invert"
-                      />
+                      <Link
+                        to={"https://www.beytonix.com/"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src={principle.logo}
+                          alt={principle.title + " Logo"}
+                          className="h-12 lg:h-16 object-contain"
+                        />
+                      </Link>
                     </div>
                   )}
 

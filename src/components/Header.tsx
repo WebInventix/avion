@@ -26,7 +26,12 @@ export function Header() {
             to="/"
             className="flex items-center hover:opacity-80 transition-opacity"
           >
-            <a className="font-serif text-xl lg:text-2xl tracking-[0.3em] text-foreground font-medium hover:text-primary transition-colors" href="/">ARVION</a>
+            <a
+              className="text-[14px] leading-[20px] font-medium text-[rgb(155,115,59)] tracking-[0.3em]"
+              href="/"
+            >
+              ARVION
+            </a>
           </Link>
 
           {/* Desktop Navigation */}
@@ -35,10 +40,11 @@ export function Header() {
               <Link
                 key={item.label}
                 to={item.href}
-                className={`text-sm tracking-[0.15em] uppercase transition-colors duration-300 ${isActive(item.href)
-                    ? "text-foreground"
+                className={`text-[12px] leading-[16px] font-normal tracking-[0.15em] uppercase transition-colors duration-300 ${
+                  isActive(item.href)
+                    ? "text-[rgb(155,115,59)]" // Active item color updated
                     : "text-muted-foreground hover:text-foreground"
-                  }`}
+                }`}
               >
                 {item.label}
               </Link>
@@ -64,10 +70,11 @@ export function Header() {
                   key={item.label}
                   to={item.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className={`text-sm tracking-[0.15em] uppercase transition-colors duration-300 ${isActive(item.href)
-                      ? "text-foreground"
+                  className={`text-[12px] leading-[16px] font-normal tracking-[0.15em] uppercase transition-colors duration-300 ${
+                    isActive(item.href)
+                      ? "text-[rgb(155,115,59)]" // Mobile active item color updated
                       : "text-muted-foreground hover:text-foreground"
-                    }`}
+                  }`}
                 >
                   {item.label}
                 </Link>
