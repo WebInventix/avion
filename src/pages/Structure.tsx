@@ -13,10 +13,12 @@ const structurePrinciples = [
   {
     subtitle: "Strategic Advisory",
     title: "Beytonix Group",
+    logo: "/Beytonix_Horizontal_Black.png",
     description:
       "An advisory entity providing governance, capital markets, and restructuring expertise to select public corporations. Operates independently with alignment to Arvion principles.",
   },
 ];
+
 
 const StructurePage = () => {
   return (
@@ -91,12 +93,25 @@ const StructurePage = () => {
                   key={principle.title}
                   className="group text-center p-8 lg:p-10 bg-card/50 border border-border/50 hover:border-primary/30 transition-all duration-500"
                 >
-                  <h3 className="font-serif text-lg lg:text-2xl text-foreground mb-4">
+                  {/* Logo (only renders if exists) */}
+                  {principle.logo && (
+                    <div className="mb-6 flex justify-center">
+                      <img
+                        src={principle.logo}
+                        alt={principle.title}
+                        className="h-10 lg:h-12 object-contain brightness-0 invert"
+                      />
+                    </div>
+                  )}
+
+                  <h3 className="font-serif text-lg lg:text-2xl text-foreground mb-2">
                     {principle.subtitle}
                   </h3>
+
                   <h3 className="font-serif text-xl lg:text-1xl text-foreground mb-4">
                     {principle.title}
                   </h3>
+
                   <p className="text-muted-foreground text-sm lg:text-base leading-relaxed">
                     {principle.description}
                   </p>

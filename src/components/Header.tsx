@@ -26,12 +26,7 @@ export function Header() {
             to="/"
             className="flex items-center hover:opacity-80 transition-opacity"
           >
-            <img 
-              src="/Beytonix_Horizontal_Black.png" 
-              alt="Beytonix" 
-              className="h-8 lg:h-10 w-auto brightness-0 invert"
-              style={{ filter: 'brightness(0) invert(1)' }}
-            />
+            <a className="font-serif text-xl lg:text-2xl tracking-[0.3em] text-foreground font-medium hover:text-primary transition-colors" href="/">ARVION</a>
           </Link>
 
           {/* Desktop Navigation */}
@@ -40,11 +35,10 @@ export function Header() {
               <Link
                 key={item.label}
                 to={item.href}
-                className={`text-sm tracking-[0.15em] uppercase transition-colors duration-300 ${
-                  isActive(item.href)
+                className={`text-sm tracking-[0.15em] uppercase transition-colors duration-300 ${isActive(item.href)
                     ? "text-foreground"
                     : "text-muted-foreground hover:text-foreground"
-                }`}
+                  }`}
               >
                 {item.label}
               </Link>
@@ -70,11 +64,10 @@ export function Header() {
                   key={item.label}
                   to={item.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className={`text-sm tracking-[0.15em] uppercase transition-colors duration-300 ${
-                    isActive(item.href)
+                  className={`text-sm tracking-[0.15em] uppercase transition-colors duration-300 ${isActive(item.href)
                       ? "text-foreground"
                       : "text-muted-foreground hover:text-foreground"
-                  }`}
+                    }`}
                 >
                   {item.label}
                 </Link>
