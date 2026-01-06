@@ -57,8 +57,6 @@ export function Principles() {
           ))}
         </div>
 
-        {/* <div className="border-b border-border/30 last:border-b-0"></div> */}
-
         {/* Closing Statement */}
         <section className="mt-5 py-5 lg:py-5">
           <div className="container mx-auto px-6 lg:px-12">

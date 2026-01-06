@@ -24,9 +24,14 @@ export function Header() {
           {/* Logo */}
           <Link
             to="/"
-            className="font-serif text-xl lg:text-2xl tracking-[0.3em] text-foreground font-medium hover:text-primary transition-colors"
+            className="flex items-center hover:opacity-80 transition-opacity"
           >
-            ARVION
+            <img 
+              src="/Beytonix_Horizontal_Black.png" 
+              alt="Beytonix" 
+              className="h-8 lg:h-10 w-auto brightness-0 invert"
+              style={{ filter: 'brightness(0) invert(1)' }}
+            />
           </Link>
 
           {/* Desktop Navigation */}

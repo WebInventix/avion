@@ -40,14 +40,12 @@ export function Hero() {
               href="mailto:info@arvion.us"
               className="inline-flex items-center gap-3 px-8 py-4 border border-primary/40 hover:border-primary hover:bg-primary/5 transition-all duration-300 group"
             >
-              {/* <Mail className="w-5 h-5 text-primary/70 group-hover:text-primary transition-colors" /> */}
               <span className="text-foreground tracking-wider">LEARN MORE</span>
             </a>
             <a
               href="mailto:info@arvion.us"
               className="inline-flex items-center gap-3 px-8 py-4 border border-primary/40 hover:border-primary hover:bg-primary/5 transition-all duration-300 group"
             >
-              {/* <Mail className="w-5 h-5 text-primary/70 group-hover:text-primary transition-colors" /> */}
               <span className="text-foreground tracking-wider">
                 LEGAL DISCLOSURES
               </span>
