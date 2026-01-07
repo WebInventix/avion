@@ -64,7 +64,7 @@ export function Footer() {
               >
                 Disclosures
               </a>
-              <a
+              {/* <a
                 className="text-sm text-foreground hover:text-secondary transition-colors"
                 href="#"
               >
@@ -75,7 +75,7 @@ export function Footer() {
                 href="#"
               >
                 Terms of Use
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

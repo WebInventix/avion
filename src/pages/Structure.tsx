@@ -103,7 +103,7 @@ const StructurePage = () => {
                         <img
                           src={principle.logo}
                           alt={principle.title + " Logo"}
-                          className="h-12 lg:h-16 object-contain"
+                          className="h-12 lg:h-16 object-contain brightness-0 invert"
                         />
                       </Link>
                     </div>
