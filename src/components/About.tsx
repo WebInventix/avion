@@ -9,21 +9,22 @@ export function About() {
           </span>
 
           {/* Heading */}
-          <h2 className="font-serif text-3xl lg:text-4xl xl:text-5xl text-foreground mb-8 leading-tight">
-            Stewardship of Capital.<br />
-            <span className="text-gradient-gold">Continuity of Strategy.</span>
+          <h2 className="font-serif text-2xl lg:text-3xl xl:text-3xl text-foreground mb-8 leading-tight">
+            Stewardship of Capital.Continuity of Strategy.
           </h2>
 
           {/* Description */}
-          <div className="space-y-6 text-muted-foreground text-base lg:text-lg leading-relaxed">
+          <div className="space-y-6 text-muted-foreground text-base lg:text-sm leading-relaxed">
             <p>
-              Arvion exists to protect and perpetuate the assets, interests, and legacy of our principals. 
-              Our mandate is governance—not growth at any cost. We prioritize stability, discretion, 
-              and long-term preservation over short-term performance.
+              Arvion exists to protect and perpetuate the assets, interests, and
+              legacy of our principals. Our <br /> mandate is governance—not
+              growth at any cost. We prioritize stability, discretion, and
+              long-term <br />
+              preservation over short-term performance.
             </p>
             <p className="text-foreground/70 italic">
-              All engagements are by direct introduction only. We do not accept unsolicited inquiries 
-              or investment proposals.
+              All engagements are by direct introduction only. We do not accept
+              unsolicited inquiries or <br /> investment proposals.
             </p>
           </div>
         </div>

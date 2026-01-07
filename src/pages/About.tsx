@@ -14,7 +14,7 @@ const AboutPage = () => {
               <span className="text-sm tracking-[0.2em] text-primary uppercase mb-6 block animate-fade-in">
                 About
               </span>
-              <h1 className="font-serif text-4xl lg:text-5xl xl:text-6xl text-foreground mb-8 animate-fade-in-delay">
+              <h1 className="font-serif text-4xl lg:text-4xl xl:text-4xl text-foreground mb-8 animate-fade-in-delay">
                 {/* A Legacy of <span className="text-gradient-gold">Stewardship</span> */}
                 Private Family Office
               </h1>
@@ -32,19 +32,19 @@ const AboutPage = () => {
               </div>
 
               <div className="space-y-8 text-center">
-                <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed">
+                <p className="text-lg font-serif leading-relaxed text-foreground mb-6 text-muted-foreground">
                   Arvion is a single-family office established to manage,
-                  preserve, and govern the capital, holdings, and strategic
-                  interests of our principals.
+                  preserve, and govern the capital, <br /> holdings, and
+                  strategic interests of our principals.
                 </p>
 
-                <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed">
+                <p className="text-1xl font-serif leading-relaxed text-foreground mb-6 text-muted-foreground">
                   We are not an investment fund. We do not accept outside
-                  capital. We do not provide advisory services to third parties.
-                  Our sole obligation is to the family we serve.
+                  capital. We do not provide advisory services <br /> to third
+                  parties. Our sole obligation is to the family we serve.
                 </p>
 
-                <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed">
+                <p className="text-1xl font-serif leading-relaxed text-foreground mb-6 text-muted-foreground">
                   The office provides centralized oversight of diverse holdings
                   including operating companies, real assets, financial
                   instruments, and philanthropic initiatives. Each entity
@@ -52,7 +52,7 @@ const AboutPage = () => {
                   governance framework established by Arvion.
                 </p>
 
-                <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed">
+                <p className="text-1xl font-serif leading-relaxed text-foreground mb-6 text-muted-foreground">
                   Our approach emphasizes preservation over speculation,
                   stability over growth, and discretion above all.
                 </p>
@@ -65,7 +65,7 @@ const AboutPage = () => {
         <section className="py-16 lg:py-24 bg-secondary/30">
           <div className="container mx-auto px-6 lg:px-12">
             <div className="max-w-4xl mx-auto">
-              <h2 className="font-serif text-3xl lg:text-4xl text-foreground text-center mb-16">
+              <h2 className="font-serif text-3xl lg:text-3xl text-foreground text-center mb-16">
                 Guiding Principles
               </h2>
 
@@ -96,10 +96,10 @@ const AboutPage = () => {
                     key={value.title}
                     className="p-8 border border-border/50 bg-card/30"
                   >
-                    <h3 className="font-serif text-xl text-foreground mb-4">
+                    <h3 className="font-serif text-lg text-foreground mb-4">
                       {value.title}
                     </h3>
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-sm text-muted-foreground leading-relaxed">
                       {value.description}
                     </p>
                   </div>

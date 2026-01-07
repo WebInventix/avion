@@ -15,12 +15,12 @@ export function Hero() {
           </div>
 
           {/* Title */}
-          <h1 className="animate-fade-in-delay font-serif text-5xl lg:text-7xl xl:text-8xl tracking-[0.2em] text-foreground font-normal mb-6">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-display font-medium text-foreground mb-6 leading-tight">
             Arvion
           </h1>
 
           {/* Tagline */}
-          <p className="animate-fade-in-delay-2 font-serif text-lg lg:text-xl xl:text-2xl italic text-gradient-gold mb-8">
+          <p className="animate-fade-in-delay-2 font-serif text-lg lg:text-1xl xl:text-1xl italic text-gradient-gold mb-8">
             Private Family Office & Strategic Holdings
           </p>
 
@@ -28,7 +28,7 @@ export function Hero() {
           <div className="animate-fade-in-delay-2 w-24 h-px bg-gradient-to-r from-transparent via-primary to-transparent mx-auto mb-10" />
 
           {/* Description */}
-          <p className="animate-fade-in-delay-3 text-muted-foreground text-base lg:text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="animate-fade-in-delay-3 text-muted-foreground text-base lg:text-1xl max-w-2xl mx-auto leading-relaxed">
             Arvion is a private holding entity established to manage, preserve,
             and govern family capital across generations. We do not solicit
             external investment or provide advisory services to the public.
@@ -40,13 +40,15 @@ export function Hero() {
               href="mailto:info@arvion.us"
               className="inline-flex items-center gap-3 px-8 py-4 border border-primary/40 hover:border-primary hover:bg-primary/5 transition-all duration-300 group"
             >
-              <span className="text-foreground tracking-wider">LEARN MORE</span>
+              <span className="text-foreground tracking-wider text-sm">
+                LEARN MORE
+              </span>
             </a>
             <a
               href="mailto:info@arvion.us"
               className="inline-flex items-center gap-3 px-8 py-4 border border-primary/40 hover:border-primary hover:bg-primary/5 transition-all duration-300 group"
             >
-              <span className="text-foreground tracking-wider">
+              <span className="text-foreground tracking-wider text-sm">
                 LEGAL DISCLOSURES
               </span>
             </a>

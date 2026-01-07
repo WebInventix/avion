@@ -26,12 +26,9 @@ export function Header() {
             to="/"
             className="flex items-center hover:opacity-80 transition-opacity"
           >
-            <a
-              className="text-[14px] leading-[20px] font-medium text-[rgb(155,115,59)] tracking-[0.3em]"
-              href="/"
-            >
+            <span className="text-[14px] leading-[20px] font-medium text-[rgb(155,115,59)] tracking-[0.3em]">
               ARVION
-            </a>
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -42,7 +39,7 @@ export function Header() {
                 to={item.href}
                 className={`text-[12px] leading-[16px] font-normal tracking-[0.15em] uppercase transition-colors duration-300 ${
                   isActive(item.href)
-                    ? "text-[rgb(155,115,59)]" // Active item color updated
+                    ? "text-[rgb(155,115,59)]"
                     : "text-muted-foreground hover:text-foreground"
                 }`}
               >
@@ -72,7 +69,7 @@ export function Header() {
                   onClick={() => setIsMenuOpen(false)}
                   className={`text-[12px] leading-[16px] font-normal tracking-[0.15em] uppercase transition-colors duration-300 ${
                     isActive(item.href)
-                      ? "text-[rgb(155,115,59)]" // Mobile active item color updated
+                      ? "text-[rgb(155,115,59)]"
                       : "text-muted-foreground hover:text-foreground"
                   }`}
                 >

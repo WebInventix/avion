@@ -2,19 +2,19 @@ import { Shield, Lock, Eye } from "lucide-react";
 import { Link } from "react-router-dom";
 const principles = [
   {
-    icon: Shield,
+    // icon: Shield,
     title: "Governance",
     description:
       "Institutional oversight of holdings and strategic direction across all entities.",
   },
   {
-    icon: Lock,
+    // icon: Lock,
     title: "Preservation",
     description:
       "Capital protection and risk management designed for multi-generational continuity.",
   },
   {
-    icon: Eye,
+    // icon: Eye,
     title: "Discretion",
     description:
       "Absolute confidentiality in all matters. No public disclosure of holdings or principals.",
@@ -37,20 +37,20 @@ export function Principles() {
           {principles.map((principle, index) => (
             <div
               key={principle.title}
-              className="group text-center p-8 lg:p-10 bg-card/50 border border-border/50 hover:border-primary/30 transition-all duration-500"
+              className="group text-center p-8 lg:p-10 bg-card/50 border border-border/50"
             >
               {/* Icon */}
-              <div className="mb-6 inline-flex items-center justify-center w-14 h-14 border border-primary/30 group-hover:border-primary/50 transition-colors duration-500">
+              {/* <div className="mb-6 inline-flex items-center justify-center w-14 h-14 border border-primary/30 group-hover:border-primary/50 transition-colors duration-500">
                 <principle.icon className="w-6 h-6 text-primary/70 group-hover:text-primary transition-colors duration-500" />
-              </div>
+              </div> */}
 
               {/* Title */}
-              <h3 className="font-serif text-xl lg:text-2xl text-foreground mb-4">
+              <h3 className="font-serif text-xl lg:text-1xl text-foreground mb-4">
                 {principle.title}
               </h3>
 
               {/* Description */}
-              <p className="text-muted-foreground text-sm lg:text-base leading-relaxed">
+              <p className="text-muted-foreground text-sm lg:text-sm leading-relaxed">
                 {principle.description}
               </p>
             </div>

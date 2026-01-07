@@ -31,7 +31,7 @@ const StructurePage = () => {
               <span className="text-sm tracking-[0.2em] text-primary uppercase mb-6 block animate-fade-in">
                 Structure
               </span>
-              <h1 className="font-serif text-4xl lg:text-5xl xl:text-6xl text-foreground mb-8 animate-fade-in-delay">
+              <h1 className="font-serif text-4xl lg:text-4xl xl:text-4xl text-foreground mb-8 animate-fade-in-delay">
                 Governance Framework
               </h1>
               <div className="w-24 h-px bg-gradient-to-r from-transparent via-primary to-transparent mx-auto animate-fade-in-delay-2" />
@@ -50,7 +50,7 @@ const StructurePage = () => {
                   required for effective execution while adhering to central
                   oversight.
                 </p>
-                <p>
+                <p className="text-sm">
                   This structure enables operational autonomy within a framework
                   of aligned governance—each entity benefits from institutional
                   resources while maintaining distinct legal and operational
@@ -90,7 +90,7 @@ const StructurePage = () => {
               {structurePrinciples.map((principle) => (
                 <div
                   key={principle.title}
-                  className="group text-center p-8 lg:p-10 bg-card/50 border border-border/50 hover:border-primary/30 transition-all duration-500"
+                  className="group text-center p-8 lg:p-10 bg-card/50 border border-border/50"
                 >
                   {/* Logo (only renders if exists) */}
                   {principle.logo && (
@@ -117,7 +117,7 @@ const StructurePage = () => {
                     {principle.title}
                   </h3>
 
-                  <p className="text-muted-foreground text-sm lg:text-base leading-relaxed">
+                  <p className="text-muted-foreground text-sm lg:text-sm leading-relaxed">
                     {principle.description}
                   </p>
                 </div>
