@@ -7,7 +7,7 @@ export function Hero() {
 
         {/* Shield Logo */}
         <div className="flex justify-center mb-6">
-          <ShieldLogo />
+          <ShieldLogo className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40" />
         </div>
 
         {/* Title */}

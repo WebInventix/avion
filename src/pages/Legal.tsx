@@ -41,7 +41,8 @@ const Legal = () => {
               legal, tax, or accounting services to the general public.
             </p>
           </div>
-
+   <br />
+   <br />
           {/* Reusable section pattern */}
           {[
             ["Nature of Entity", "Arvion operates as a single-family office engaged in the management and governance of family assets, holdings, and related strategic initiatives. The entity does not function as a registered investment adviser, broker-dealer, investment company, or any form of financial services provider subject to registration requirements under applicable securities laws.", "Arvion does not hold itself out as providing investment advice for compensation and does not manage assets on behalf of third parties."],
