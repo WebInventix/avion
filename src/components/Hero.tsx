@@ -6,7 +6,7 @@ export function Hero() {
       <div className="max-w-3xl w-full">
 
         {/* Shield Logo */}
-        <div className="flex justify-center mb-6">
+        <div className="flex justify-center mb-24">
           <ShieldLogo className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40" />
         </div>
 

@@ -1,6 +1,6 @@
 export function About() {
   return (
-    <section id="about" className="py-20 lg:py-32 relative">
+    <section id="about" className="lg:py-32 relative">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="max-w-4xl mx-auto text-center">
 
