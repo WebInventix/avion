@@ -10,7 +10,7 @@ There are several ways of editing your application.
 
 **Use **
 
-Simply visit the [ Project](https://.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Simply visit the [ Project](https://.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting. 
 
 Changes made via will be committed automatically to this repo.
 
