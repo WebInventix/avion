@@ -24,7 +24,7 @@ const AboutPage = () => {
         </section>
 
         {/* Philosophy Section */}
-        <section className="py-16 lg:py-24">
+        <section className="py-16 lg:py-10">
           <div className="container mx-auto px-6 lg:px-12">
             <div className="max-w-3xl mx-auto">
               <div className="text-center mb-12">

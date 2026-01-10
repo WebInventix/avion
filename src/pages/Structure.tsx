@@ -26,7 +26,7 @@ const StructurePage = () => {
 
       <main>
         {/* Hero Section */}
-        <section className="pt-28 pb-14 lg:pt-40 lg:pb-20">
+        <section className="pt-28 pb-14 lg:pt-40 lg:pb-5">
           <div className="container mx-auto px-6 lg:px-12">
             <div className="max-w-4xl mx-auto text-center">
               <span className="text-xs sm:text-sm tracking-[0.25em] text-primary uppercase mb-6 block">
@@ -43,8 +43,8 @@ const StructurePage = () => {
         </section>
 
         {/* Overview Section */}
-        <section className="py-14 lg:py-24">
-          <div className="container mx-auto px-6 lg:px-12">
+        <section className="py-14 lg:py-9">
+          <div className="container mx-auto px-6 lg:px-10">
             <div className="max-w-3xl mx-auto text-center">
               <div className="space-y-5 text-muted-foreground text-sm sm:text-base leading-relaxed">
                 <p>
