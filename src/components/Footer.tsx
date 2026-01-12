@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 export function Footer() {
   return (
     <footer className="border-t border-border bg-card">
-      <div className="container mx-auto px-6 lg:px-8 py-12">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
+        
         {/* Important Notice */}
-        <div className="mb-10 pb-8 border-b border-border">
-          <p className="text-sm sm:text-base legal-text max-w-full sm:max-w-3xl">
+        <div className="mb-8 sm:mb-10 pb-6 sm:pb-8 border-b border-border">
+          <p className="text-xs sm:text-sm lg:text-base legal-text max-w-full sm:max-w-3xl leading-relaxed">
             <strong>Important Notice:</strong> Arvion is a private holding
             entity. This website does not constitute an offer, solicitation, or
             recommendation to buy or sell any securities or investment products.
@@ -15,20 +16,22 @@ export function Footer() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        {/* Main Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 sm:gap-8">
+          
           {/* Arvion Info */}
-          <div className="md:col-span-2">
-            <p className="text-sm sm:text-base text-foreground tracking-wide-custom font-display font-medium uppercase mb-3">
+          <div className="md:col-span-2 text-center md:text-left">
+            <p className="text-sm sm:text-base text-foreground tracking-wide-custom font-display font-medium uppercase mb-2 sm:mb-3">
               Arvion
             </p>
-            <p className="text-xs sm:text-sm text-muted-foreground max-w-full sm:max-w-sm">
+            <p className="text-xs sm:text-sm text-muted-foreground max-w-full sm:max-w-sm mx-auto md:mx-0">
               Private Family Office &amp; Strategic Holdings
             </p>
           </div>
 
           {/* Navigation */}
-          <div>
-            <p className="text-xs sm:text-sm tracking-editorial uppercase text-muted-foreground mb-4 font-sans">
+          <div className="text-center md:text-left">
+            <p className="text-xs sm:text-sm tracking-editorial uppercase text-muted-foreground mb-3 sm:mb-4 font-sans">
               Navigation
             </p>
             <div className="flex flex-col gap-2">
@@ -40,8 +43,8 @@ export function Footer() {
           </div>
 
           {/* Legal */}
-          <div>
-            <p className="text-xs sm:text-sm tracking-editorial uppercase text-muted-foreground mb-4 font-sans">
+          <div className="text-center md:text-left">
+            <p className="text-xs sm:text-sm tracking-editorial uppercase text-muted-foreground mb-3 sm:mb-4 font-sans">
               Legal
             </p>
             <div className="flex flex-col gap-2">
@@ -53,11 +56,12 @@ export function Footer() {
         </div>
 
         {/* Footer Bottom */}
-        <div className="mt-10 pt-6 border-t border-border">
+        <div className="mt-8 sm:mt-10 pt-5 sm:pt-6 border-t border-border text-center md:text-left">
           <p className="text-xs sm:text-sm text-muted-foreground">
             © 2026 Arvion Holdings. All rights reserved.
           </p>
         </div>
+
       </div>
     </footer>
   );

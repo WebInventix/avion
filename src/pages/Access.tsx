@@ -10,7 +10,7 @@ const AccessPage = () => {
         {/* First Section */}
         <section className="py-32 lg:py-32">
           <div className="container mx-auto px-6 lg:px-12">
-            <div className="max-w-4xl mt-20">
+            <div className="max-w-4xl mt-15">
               <h1 className="font-serif text-4xl text-bolder lg:text-5xl xl:text-7xl text-foreground mb-12">
                 Access
               </h1>

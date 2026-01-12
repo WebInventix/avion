@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import Logo from "../../public/images/full_logo.svg"
 
 const navItems = [
   { label: "About", href: "/about" },
@@ -27,7 +28,8 @@ export function Header() {
             className="flex items-center hover:opacity-80 transition-opacity"
           >
             <span className="text-[14px] leading-[20px] font-medium text-[rgb(155,115,59)] tracking-[0.3em]">
-              ARVION
+              {/* ARVION */}
+              <img src={Logo} alt="Logo"  className="w-16 sm:w-20 md:w-24 h-auto object-contain"/>
             </span>
           </Link>
 
