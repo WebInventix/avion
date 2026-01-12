@@ -20,7 +20,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 sm:gap-8">
           
           {/* Arvion Info */}
-          <div className="md:col-span-2 text-center md:text-left">
+          <div className="md:col-span-2 text-left md:text-left">
             <p className="text-sm sm:text-base text-foreground tracking-wide-custom font-display font-medium uppercase mb-2 sm:mb-3">
               Arvion
             </p>
@@ -30,7 +30,7 @@ export function Footer() {
           </div>
 
           {/* Navigation */}
-          <div className="text-center md:text-left">
+          <div className="text-left md:text-left">
             <p className="text-xs sm:text-sm tracking-editorial uppercase text-muted-foreground mb-3 sm:mb-4 font-sans">
               Navigation
             </p>
@@ -43,7 +43,7 @@ export function Footer() {
           </div>
 
           {/* Legal */}
-          <div className="text-center md:text-left">
+          <div className="text-left md:text-left">
             <p className="text-xs sm:text-sm tracking-editorial uppercase text-muted-foreground mb-3 sm:mb-4 font-sans">
               Legal
             </p>
@@ -56,7 +56,7 @@ export function Footer() {
         </div>
 
         {/* Footer Bottom */}
-        <div className="mt-8 sm:mt-10 pt-5 sm:pt-6 border-t border-border text-center md:text-left">
+        <div className="mt-8 sm:mt-10 pt-5 sm:pt-6 border-t border-border text-left md:text-left">
           <p className="text-xs sm:text-sm text-muted-foreground">
             © 2026 Arvion Holdings. All rights reserved.
           </p>
