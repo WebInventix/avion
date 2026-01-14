@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ShieldLogo } from "@/components/ShieldLogo";
+import Logo from "../../public/images/white-logo.svg";
 
 const AccessPage = () => {
   return (
@@ -77,10 +78,16 @@ const AccessPage = () => {
 
               <div className="flex items-center justify-center lg:justify-end">
                 <div className="text-center">
-                  <ShieldLogo className="w-24 h-28 mx-auto mb-6 glow-purple" />
-                  <p className="text-sm text-muted-foreground/60 italic">
+                  {/* <ShieldLogo className="w-24 h-28 mx-auto mb-6 glow-purple" /> */}
+                  <img
+                    src={Logo}
+                    alt="ShieldLogo"
+                    className="w-48 h-auto md:w-48 md:h-90 lg:w-48 lg:h-90 mx-auto"
+                  />
+   
+                  {/* <p className="text-sm text-muted-foreground/60 italic">
                     Inquiries by introduction only.
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>

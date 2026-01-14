@@ -2,7 +2,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 // import { ShieldLogo } from "@/components/ShieldLogo";
 import { Link } from "react-router-dom";
-import Logo from "../../public/images/full_logo.svg";
+import Logo from "../../public/images/white-logo.svg";
 
 const AboutPage = () => {
   return (

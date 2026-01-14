@@ -6,7 +6,8 @@ const structurePrinciples = [
   {
     subtitle: "Philanthropic Institution",
     title: "The Junabys Foundation",
-    logo: "/images/white-logo.svg",
+    logo: "/images/Junabys.png",
+    logoClass: "h-20 sm:h-32 lg:h-32 invert",
     description:
       "The family's charitable foundation dedicated to strategic philanthropic initiatives and community impact. Governed under the Arvion mandate with independent operational authority.",
   },
@@ -14,6 +15,7 @@ const structurePrinciples = [
     subtitle: "Strategic Advisory",
     title: "Beytonix Group",
     logo: "/Beytonix_Horizontal_Black.png",
+    logoClass: "h-8 sm:h-10 lg:h-12 invert",
     description:
       "An advisory entity providing governance, capital markets, and restructuring expertise to select public corporations. Operates independently with alignment to Arvion principles.",
   },
@@ -90,7 +92,7 @@ const StructurePage = () => {
                         <img
                           src={principle.logo}
                           alt={principle.title + " Logo"}
-                          className="h-14 sm:h-10 lg:h-20 object-contain brightness-0 invert"
+                          className={`${principle.logoClass} w-auto object-contain`}
                         />
                       </Link>
                     </div>
@@ -144,19 +146,6 @@ const StructurePage = () => {
 export default StructurePage;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-// import { Header } from "@/components/Header";
 // import { Footer } from "@/components/Footer";
 // import { Shield, Lock, Eye } from "lucide-react";
 // import { Link } from "react-router-dom";
@@ -298,6 +287,5 @@ export default StructurePage;
 //     </div>
 //   );
 // };
-
 
 // export default StructurePage;
