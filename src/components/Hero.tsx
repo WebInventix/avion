@@ -1,5 +1,5 @@
 // import { ShieldLogo } from "./ShieldLogo";
-import Logo from "../../public/images/full_logo.svg"
+import Logo from "../../public/images/white-logo.svg"
 
 export function Hero() {
   return (
